@@ -73,6 +73,7 @@
 
 // customElements.define("offcanvasmenu-component", offCanvasMenu);
 
+import Link from 'next/link';
 import React from 'react';
 
 export default function offCanvasMenu() {
@@ -108,19 +109,19 @@ export default function offCanvasMenu() {
           <div class="col-lg-5 col-xl-6">
             <ul class="main-navigation list-unstyled">
               <li>
-                <a href="index-1.html">Digital Agency</a>
+                <Link href="/index-1">Digital Agency</Link>
               </li>
               <li>
-                <a href="index-2.html">Creative Agency</a>
+                <Link href="/index-2">Creative Agency</Link>
               </li>
               <li>
-                <a href="index-3.html">Personal Portfolio</a>
+                <Link href="/index-3">Personal Portfolio</Link>
               </li>
               <li>
-                <a href="index-4.html">Home Startup</a>
+                <Link href="/index-4">Home Startup</Link>
               </li>
               <li>
-                <a href="index-5.html">Corporate Agency</a>
+                <Link href="/index-5">Corporate Agency</Link>
               </li>
             </ul>
           </div>
@@ -136,12 +137,12 @@ export default function offCanvasMenu() {
                 </address>
                 <address class="address">
                   <span class="title">We're Available 24/7. Call Now.</span>
-                  <a class="tel" href="tel:8884562790">
+                  <Link class="tel" href="tel:8884562790">
                     <i class="fas fa-phone"></i>(888) 456-2790
-                  </a>
-                  <a class="tel" href="tel:12125553333">
+                  </Link>
+                  <Link class="tel" href="tel:12125553333">
                     <i class="fas fa-fax"></i>(121) 255-53333
-                  </a>
+                  </Link>
                 </address>
               </div>
               <div class="contact-inner">
@@ -149,24 +150,24 @@ export default function offCanvasMenu() {
                 <div class="contact-social-share">
                   <ul class="social-share list-unstyled">
                     <li>
-                      <a href="https://facebook.com/">
+                      <Link href="https://facebook.com/">
                         <i class="fab fa-facebook-f"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://twitter.com/">
+                      <Link href="https://twitter.com/">
                         <i class="fab fa-twitter"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.behance.net/">
+                      <Link href="https://www.behance.net/">
                         <i class="fab fa-behance"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/">
+                      <Link href="https://www.linkedin.com/">
                         <i class="fab fa-linkedin-in"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

@@ -5,6 +5,7 @@ import Backtotop from '../components/backToTop';
 import Themetoggle from '../components/themeToggle';
 import Nav2 from '../components/nav2';
 import Footer from '../components/footer';
+import Link from 'next/link';
 
 function contact() {
   return (
@@ -162,7 +163,7 @@ function contact() {
                       pm
                     </p>
                     <h4 className="phone-number">
-                      <a href="tel:1234567890">(+91) 9779003936</a>
+                      <Link href="tel:1234567890">(+91) 9779003936</Link>
                     </h4>
                   </div>
                   <div className="contact-info mb--30">
@@ -172,9 +173,9 @@ function contact() {
                       business hours.
                     </p>
                     <h4 className="phone-number">
-                      <a href="mailto:contact@priamjain.me">
+                      <Link href="mailto:contact@priamjain.me">
                         contact@priamjain.me
-                      </a>
+                      </Link>
                     </h4>
                   </div>
                 </div>

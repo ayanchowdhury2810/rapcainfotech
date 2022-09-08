@@ -88,6 +88,7 @@
 // customElements.define("nav-component", header);
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function nav() {
   return (
@@ -97,27 +98,27 @@ export default function nav() {
         <div className="container">
           <div className="header-navbar">
             <div className="header-logo">
-              <a href="index.html">
+              <Link href="/">
                 <img
                   className="light-version-logo rapca-logo"
                   src="assets/media/logo-3.svg"
                   alt="logo"
                 />
-              </a>
-              <a href="index.html">
+              </Link>
+              <Link href="/">
                 <img
                   className="dark-version-logo rapca-logo"
                   src="assets/media/logo-3.svg"
                   alt="logo"
                 />
-              </a>
-              <a href="index.html">
+              </Link>
+              <Link href="/">
                 <img
                   className="sticky-logo rapca-logo"
                   src="assets/media/logo-2.svg"
                   alt="logo"
                 />
-              </a>
+              </Link>
             </div>
             <div className="header-main-nav">
               {/* <!-- Start Mainmanu Nav --> */}
@@ -125,18 +126,20 @@ export default function nav() {
                 <div className="d-block d-lg-none">
                   <div className="mobile-nav-header">
                     <div className="mobile-nav-logo">
-                      <a href="index.html">
+                      <Link href="/">
                         <img
                           className="light-mode"
                           src="assets/media/logo-2.svg"
                           alt="Site Logo"
                         />
+                      </Link>
+                      <Link href="/">
                         <img
                           className="dark-mode"
                           src="assets/media/logo-3.svg"
                           alt="Site Logo"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <button
                       className="mobile-menu-close"
@@ -148,24 +151,28 @@ export default function nav() {
                 </div>
                 <ul className="mainmenu">
                   <li className="menu-item-has-children">
-                    <a href="javascript:void(0);">Services</a>
+                    <Link href="javascript:void(0);">Services</Link>
                     <ul className="axil-submenu">
                       <li>
-                        <a href="service-reactjs.html">React.js Development</a>
+                        <Link href="/service-reactjs">
+                          React.js Development
+                        </Link>
                       </li>
                       <li>
-                        <a href="service-nextjs.html">Next.js Development</a>
+                        <Link href="/service-nextjs">Next.js Development</Link>
                       </li>
                       <li>
-                        <a href="service-frontent.html">Frontend Development</a>
+                        <Link href="/service-frontent">
+                          Frontend Development
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="portfolio.html">Portfolio</a>
+                    <Link href="/portfolio">Portfolio</Link>
                   </li>
                   <li>
-                    <a href="contact.html">Contact</a>
+                    <Link href="/contact">Contact</Link>
                   </li>
                 </ul>
               </nav>
@@ -174,9 +181,9 @@ export default function nav() {
             <div className="header-action">
               <ul className="list-unstyled">
                 <li className="header-btn">
-                  <a href="contact.html" className="axil-btn btn-fill-white">
-                    Let's Talk
-                  </a>
+                  <Link href="/contact">
+                    <div className="axil-btn btn-fill-white">Let's Talk</div>
+                  </Link>
                 </li>
                 <li className="mobile-menu-btn sidemenu-btn d-lg-none d-block">
                   <button
@@ -192,22 +199,22 @@ export default function nav() {
                 <li className="my_switcher d-block d-lg-none">
                   <ul>
                     <li title="Light Mode">
-                      <a
+                      <Link
                         href="javascript:void(0)"
                         className="setColor light"
                         data-theme="light"
                       >
                         <i className="fal fa-lightbulb-on"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li title="Dark Mode">
-                      <a
+                      <Link
                         href="javascript:void(0)"
                         className="setColor dark"
                         data-theme="dark"
                       >
                         <i className="fas fa-moon"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>

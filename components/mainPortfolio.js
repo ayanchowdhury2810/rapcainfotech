@@ -128,6 +128,7 @@
 
 // customElements.define("mainportfolio-component", mainPortfolio);
 
+import Link from 'next/link';
 import React from 'react';
 
 export default function mainPortfolio() {
@@ -152,9 +153,9 @@ export default function mainPortfolio() {
               business. A holistic, user-centric perspective is what truly sets
               one apart.
             </p>
-            <a href="contact.html" class="axil-btn btn-fill-primary">
+            <Link href="/contact" class="axil-btn btn-fill-primary">
               Get it Now
-            </a>
+            </Link>
           </div>
           <div class="col-lg-6 offset-xl-1">
             <div class="why-choose-us">

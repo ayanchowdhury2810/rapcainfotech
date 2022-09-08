@@ -76,6 +76,7 @@
 
 // customElements.define("services-component", services);
 
+import Link from 'next/link';
 import React from 'react';
 
 export default function services() {
@@ -107,15 +108,15 @@ export default function services() {
               </div>
               <div className="content">
                 <h5 className="title">
-                  <a href="service-reactjs.html">React.js Development</a>
+                  <Link href="/service-reactjs">React.js Development</Link>
                 </h5>
                 <p>
                   User interface built with React that is Truly Outstanding,
                   Responsive, Interactive, SEO friendly and Intuitive.
                 </p>
-                <a href="service-reactjs.html" className="more-btn">
+                <Link href="/service-reactjs" className="more-btn">
                   Find out more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -136,7 +137,7 @@ export default function services() {
               </div>
               <div className="content">
                 <h5 className="title">
-                  <a href="service-development.html">Next.js Development</a>
+                  <Link href="/service-development">Next.js Development</Link>
                 </h5>
                 <p>
                   Next JS is a React JS framework, which is popular to create
@@ -144,9 +145,9 @@ export default function services() {
                   friendly websites. Next JS takes an important part in React
                   SSR websites.
                 </p>
-                <a href="service-nextjs.html" className="more-btn">
+                <Link href="/service-nextjs" className="more-btn">
                   Find out more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -162,7 +163,7 @@ export default function services() {
               </div>
               <div className="content">
                 <h5 className="title">
-                  <a href="service-frontend.html">Frontend Development</a>
+                  <Link href="/service-frontend">Frontend Development</Link>
                 </h5>
                 <p>
                   Interactive custom web applications to deliver pixel-perfect,
@@ -170,9 +171,9 @@ export default function services() {
                   efficient, SEO friendly User Interfaces connecting them with
                   back-end effectively.
                 </p>
-                <a href="service-frontend.html" className="more-btn">
+                <Link href="/service-frontend" className="more-btn">
                   Find out more
-                </a>
+                </Link>
               </div>
             </div>
           </div>

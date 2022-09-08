@@ -5,6 +5,7 @@ import Nav2 from '../components/nav2';
 import Footer from '../components/footer';
 import CallToAction from '../components/callToAction';
 import Script from 'next/script';
+import Link from 'next/link';
 
 function serviceFrontend() {
   return (
@@ -29,9 +30,9 @@ function serviceFrontend() {
         your experience and security.
       </p>
     <![endif]--> */}
-        <a href="#main-wrapper" id="backto-top" className="back-to-top">
+        <Link href="/#main-wrapper" id="backto-top" className="back-to-top">
           <i className="far fa-angle-double-up"></i>
-        </a>
+        </Link>
 
         {/* <!-- Preloader Start Here --> */}
         <div id="preloader"></div>

@@ -5,6 +5,7 @@ import Themetoggle from '../components/themeToggle';
 import Nav2 from '../components/nav2';
 import Footer from '../components/footer';
 import CallToAction from '../components/callToAction';
+import Link from 'next/link';
 
 export default function serviceReactjs() {
   return (
@@ -29,9 +30,9 @@ export default function serviceReactjs() {
         your experience and security.
       </p>
     <![endif]--> */}
-        <a href="#main-wrapper" id="backto-top" className="back-to-top">
+        <Link href="/#main-wrapper" id="backto-top" className="back-to-top">
           <i className="far fa-angle-double-up"></i>
-        </a>
+        </Link>
 
         {/* <!-- Preloader Start Here --> */}
         <div id="preloader"></div>

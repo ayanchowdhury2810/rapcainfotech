@@ -7,6 +7,7 @@ import CallToAction from '../components/callToAction';
 import OffCanvasMenu from '../components/offCanvasMenu';
 import Aboutus from '../components/aboutus.js';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function serviceSeo() {
   return (
@@ -31,9 +32,9 @@ export default function serviceSeo() {
         your experience and security.
       </p>
     <![endif]--> */}
-        <a href="#main-wrapper" id="backto-top" className="back-to-top">
+        <Link href="/#main-wrapper" id="backto-top" className="back-to-top">
           <i className="far fa-angle-double-up"></i>
-        </a>
+        </Link>
 
         {/* <!-- Preloader Start Here --> */}
         <div id="preloader"></div>

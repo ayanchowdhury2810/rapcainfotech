@@ -61,6 +61,7 @@
 
 // customElements.define("cta-component", callToAction);
 
+import Link from 'next/link';
 import React from 'react';
 
 export default function callToAction() {
@@ -71,12 +72,9 @@ export default function callToAction() {
           <div className="section-heading heading-light">
             <span className="subtitle">Let's Work Together</span>
             <h2 className="title">Need a successful project?</h2>
-            <a
-              href="contact.html"
-              className="axil-btn btn-large btn-fill-white"
-            >
+            <Link href="/contact" className="axil-btn btn-large btn-fill-white">
               Estimate Project
-            </a>
+            </Link>
           </div>
           <div className="thumbnail">
             <div

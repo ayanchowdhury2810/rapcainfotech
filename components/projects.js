@@ -158,6 +158,7 @@
 //                     */
 // }
 
+import Link from 'next/link';
 import React from 'react';
 
 export default function projects() {
@@ -176,15 +177,15 @@ export default function projects() {
             <div className="col-xl-4 col-md-6 project mobile">
               <div className="project-grid">
                 <div className="thumbnail">
-                  <a href="https://www.getclientell.com/" target="__blank">
+                  <Link href="https://www.getclientell.com/" target="__blank">
                     <img src="assets/images/clientell.png" alt="project" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="https://www.getclientell.com/" target="__blank">
+                    <Link href="https://www.getclientell.com/" target="__blank">
                       Clientell
-                    </a>
+                    </Link>
                   </h4>
                   <span className="subtitle">
                     React.js, Typescript, D3.js, Material UI
@@ -195,15 +196,15 @@ export default function projects() {
             <div className="col-xl-4 col-md-6 project branding">
               <div className="project-grid">
                 <div className="thumbnail">
-                  <a href="https://www.zaio.io" target="__blank">
+                  <Link href="https://www.zaio.io" target="__blank">
                     <img src="assets/images/zaio.png" alt="Zaio.io" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="https://www.zaio.io" target="__blank">
+                    <Link href="https://www.zaio.io" target="__blank">
                       ZAIO
-                    </a>
+                    </Link>
                   </h4>
                   <span className="subtitle">
                     Reactjs, Nodejs, Cloudinary, CodeSandBox, React-Bootstrap,
@@ -215,15 +216,15 @@ export default function projects() {
             <div className="col-xl-4 col-md-6 project branding">
               <div className="project-grid">
                 <div className="thumbnail">
-                  <a href="https://finsight.ai" target="__blank">
+                  <Link href="https://finsight.ai" target="__blank">
                     <img src="assets/images/weexpand.png" alt="project" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="https://www.weexpand.co" target="__blank">
+                    <Link href="https://www.weexpand.co" target="__blank">
                       Weexpand
-                    </a>
+                    </Link>
                   </h4>
                   <span className="subtitle">
                     Typescript, Reactjs, Redux, Yum, formik, Material-UI,
@@ -235,15 +236,15 @@ export default function projects() {
             <div className="col-xl-4 col-md-6 project mobile">
               <div className="project-grid">
                 <div className="thumbnail">
-                  <a href="https://finsight.ai" target="__blank">
+                  <Link href="https://finsight.ai" target="__blank">
                     <img src="assets/images/finsight.png" alt="project" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="https://finsight.ai" target="__blank">
+                    <Link href="https://finsight.ai" target="__blank">
                       Finsight
-                    </a>
+                    </Link>
                   </h4>
                   <span className="subtitle">
                     Reactjs, redux, firebase, Material-UI, Ant Design
@@ -254,15 +255,15 @@ export default function projects() {
             <div className="col-xl-4 col-md-6 project mobile">
               <div className="project-grid">
                 <div className="thumbnail">
-                  <a href="https://practworks.com/" target="__blank">
+                  <Link href="https://practworks.com/" target="__blank">
                     <img src="assets/images/practworks.png" alt="project" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="https://practworks.com/" target="__blank">
+                    <Link href="https://practworks.com/" target="__blank">
                       Practworks
-                    </a>
+                    </Link>
                   </h4>
                   <span className="subtitle">
                     React.js, Javascript, Pdf.js, Material UI
@@ -274,15 +275,15 @@ export default function projects() {
             <div className="col-xl-4 col-md-6 project mobile">
               <div className="project-grid">
                 <div className="thumbnail">
-                  <a href="https://www.liquidonate.com/" target="__blank">
+                  <Link href="https://www.liquidonate.com/" target="__blank">
                     <img src="assets/images/liquidonate.png" alt="project" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="content">
                   <h4 className="title">
-                    <a href="https://www.liquidonate.com/" target="__blank">
+                    <Link href="https://www.liquidonate.com/" target="__blank">
                       LiquiDonate
-                    </a>
+                    </Link>
                   </h4>
                   <span className="subtitle">
                     React.js, Typescript, D3.js, Material UI

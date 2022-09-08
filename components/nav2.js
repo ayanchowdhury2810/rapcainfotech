@@ -91,6 +91,7 @@
 
 // customElements.define("nav2-component", nav2);
 
+import Link from 'next/link';
 import React from 'react';
 
 export default function nav2() {
@@ -101,27 +102,27 @@ export default function nav2() {
         <div class="container">
           <div class="header-navbar">
             <div class="header-logo">
-              <a href="index.html">
+              <Link href="/">
                 <img
                   class="light-version-logo rapca-logo"
                   src="assets/media/logo.svg"
                   alt="logo"
                 />
-              </a>
-              <a href="index.html">
+              </Link>
+              <Link href="/">
                 <img
                   class="dark-version-logo rapca-logo"
                   src="assets/media/logo-3.svg"
                   alt="logo"
                 />
-              </a>
-              <a href="index.html">
+              </Link>
+              <Link href="/">
                 <img
                   class="sticky-logo rapca-logo"
                   src="assets/media/logo-2.svg"
                   alt="logo"
                 />
-              </a>
+              </Link>
             </div>
             <div class="header-main-nav">
               {/* <!-- Start Mainmanu Nav --> */}
@@ -129,18 +130,20 @@ export default function nav2() {
                 <div class="d-block d-lg-none">
                   <div class="mobile-nav-header">
                     <div class="mobile-nav-logo">
-                      <a href="index.html">
+                      <Link href="/">
                         <img
                           class="light-mode"
                           src="assets/media/logo-2.svg"
                           alt="Site Logo"
                         />
+                      </Link>
+                      <Link href="/">
                         <img
                           class="dark-mode"
                           src="assets/media/logo-3.svg"
                           alt="Site Logo"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <button
                       class="mobile-menu-close"
@@ -152,24 +155,26 @@ export default function nav2() {
                 </div>
                 <ul class="mainmenu">
                   <li class="menu-item-has-children">
-                    <a href="javascript:void(0);">Services</a>
+                    <Link href="javascript:void(0);">Services</Link>
                     <ul class="axil-submenu">
                       <li>
-                        <a href="service-reactjs.html">React Development</a>
+                        <Link href="/service-reactjs">React Development</Link>
                       </li>
                       <li>
-                        <a href="service-nextjs.html">Next.js Development</a>
+                        <Link href="/service-nextjs">Next.js Development</Link>
                       </li>
                       <li>
-                        <a href="service-frontend.html">Frontend Development</a>
+                        <Link href="/service-frontend">
+                          Frontend Development
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="portfolio.html">Portfolio</a>
+                    <Link href="/portfolio">Portfolio</Link>
                   </li>
                   <li>
-                    <a href="contact.html">Contact</a>
+                    <Link href="/contact">Contact</Link>
                   </li>
                 </ul>
               </nav>
@@ -202,22 +207,22 @@ export default function nav2() {
                 <li class="my_switcher d-block d-lg-none">
                   <ul>
                     <li title="Light Mode">
-                      <a
+                      <Link
                         href="javascript:void(0)"
                         class="setColor light"
                         data-theme="light"
                       >
                         <i class="fal fa-lightbulb-on"></i>
-                      </a>
+                      </Link>
                     </li>
                     <li title="Dark Mode">
-                      <a
+                      <Link
                         href="javascript:void(0)"
                         class="setColor dark"
                         data-theme="dark"
                       >
                         <i class="fas fa-moon"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>

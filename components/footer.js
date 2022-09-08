@@ -80,6 +80,7 @@
 
 // customElements.define("footer-component", Footer);
 
+import Link from 'next/link';
 import React from 'react';
 
 export default function footer() {
@@ -97,9 +98,9 @@ export default function footer() {
               <div className="footer-widget border-end">
                 <div className="footer-newsletter">
                   <h2 className="title">Get in touch!</h2>
-                  <a href="contact.html" className="axil-btn btn-fill-white">
+                  <Link href="/contact" className="axil-btn btn-fill-white">
                     Let's Talk
-                  </a>
+                  </Link>
                   {/* <!--=<form>
                                 <div className="input-group">
                                     <input type="email" className="form-control" placeholder="Email address" />
@@ -122,17 +123,19 @@ export default function footer() {
                     <div className="footer-menu-link">
                       <ul className="list-unstyled">
                         <li>
-                          <a href="service-reactjs.html">
+                          <Link href="/service-reactjs">
                             React.js Development
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="service-nextjs.html">Next.js Development</a>
+                          <Link href="/service-nextjs">
+                            Next.js Development
+                          </Link>
                         </li>
                         <li>
-                          <a href="service-frontend.html">
+                          <Link href="/service-frontend">
                             Frontend Development
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -144,10 +147,10 @@ export default function footer() {
                     <div className="footer-menu-link">
                       <ul className="list-unstyled">
                         <li>
-                          <a href="javascript:void(0);">Blog</a>
+                          <Link href="javascript:void(0);">Blog</Link>
                         </li>
                         <li>
-                          <a href="portfolio.html">Portfolio</a>
+                          <Link href="/portfolio">Portfolio</Link>
                         </li>
                       </ul>
                     </div>
@@ -159,7 +162,7 @@ export default function footer() {
                     <div className="footer-menu-link">
                       <ul className="list-unstyled">
                         <li>
-                          <a href="contact.html">Contact</a>
+                          <Link href="/contact">Contact</Link>
                         </li>
                       </ul>
                     </div>
@@ -178,7 +181,7 @@ export default function footer() {
           <div className="footer-copyright text-center">
             <span className="copyright-text">
               © 2022. All rights reserved by
-              <a href="/contact.html">Rapca InfoTech Pvt. Ltd.</a>.
+              <Link href="/contact">Rapca InfoTech Pvt. Ltd.</Link>.
             </span>
           </div>
         </div>

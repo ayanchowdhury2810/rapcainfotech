@@ -6,6 +6,7 @@ import Nav from '../components/nav';
 import CallToAction from '../components/callToAction';
 import Footer from '../components/footer';
 import Script from 'next/script';
+import Link from 'next/link';
 
 function blogContextApi() {
   return (
@@ -81,7 +82,7 @@ function blogContextApi() {
             <div className="breadcrumb">
               <ul className="list-unstyled">
                 <li>
-                  <a href="index-1.html">Home</a>
+                  <Link href="/index-1">Home</Link>
                 </li>
                 <li className="active">Blog</li>
               </ul>
@@ -746,7 +747,7 @@ function blogContextApi() {
                       </div>
                       <div className="info">
                         <h5 className="title">
-                          <a href="#">Theresa Underwood</a>
+                          <Link href="/#">Theresa Underwood</Link>
                         </h5>
                         <p>
                           Email is a crucial channel in any marketing mix, and
@@ -755,44 +756,44 @@ function blogContextApi() {
                         </p>
                         <ul className="social-share list-unstyled">
                           <li>
-                            <a href="#">
+                            <Link href="/#">
                               <i className="fab fa-facebook-f"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="/#">
                               <i className="fab fa-twitter"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="/#">
                               <i className="fab fa-linkedin-in"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="/#">
                               <i className="fab fa-pinterest-p"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="/#">
                               <i className="fab fa-instagram"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="/#">
                               <i className="fab fa-vimeo-v"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="/#">
                               <i className="fab fa-dribbble"></i>
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="/#">
                               <i className="fab fa-behance"></i>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -814,9 +815,9 @@ function blogContextApi() {
                             <h5 className="title">Sophie Asveld</h5>
                             <div className="comment-date">
                               <p>February 14, 2021</p>
-                              <a className="reply-btn" href="#">
+                              <Link className="reply-btn" href="/#">
                                 <i className="fas fa-reply"></i>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <p>
@@ -840,9 +841,9 @@ function blogContextApi() {
                             <h5 className="title">Ariana Gerad</h5>
                             <div className="comment-date">
                               <p>February 14, 2021</p>
-                              <a className="reply-btn" href="#">
+                              <Link className="reply-btn" href="/#">
                                 <i className="fas fa-reply"></i>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <p>
@@ -866,9 +867,9 @@ function blogContextApi() {
                             <h5 className="title">Sophie Asveld</h5>
                             <div className="comment-date">
                               <p>February 14, 2021</p>
-                              <a className="reply-btn" href="#">
+                              <Link className="reply-btn" href="/#">
                                 <i className="fas fa-reply"></i>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <p>
@@ -972,24 +973,26 @@ function blogContextApi() {
                     <h4 className="widget-title">Categories</h4>
                     <ul className="category-list list-unstyled">
                       <li>
-                        <a href="blog-category.html">Agency news</a>
+                        <Link href="/blog-category">Agency news</Link>
                       </li>
                       <li>
-                        <a href="blog-category.html">Blog</a>
+                        <Link href="/blog-category">Blog</Link>
                       </li>
                       <li>
-                        <a href="blog-category.html">Information technology</a>
+                        <Link href="/blog-category">
+                          Information technology
+                        </Link>
                       </li>
                       <li>
-                        <a href="blog-category.html">New ideas</a>
+                        <Link href="/blog-category">New ideas</Link>
                       </li>
                       <li>
-                        <a href="blog-category.html">Uncategorized</a>
+                        <Link href="/blog-category">Uncategorized</Link>
                       </li>
                       <li>
-                        <a href="blog-category.html">
+                        <Link href="/blog-category">
                           Marketing &amp; branding
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -998,34 +1001,34 @@ function blogContextApi() {
                       <h5 className="title">Follow:</h5>
                       <ul className="social-list list-unstyled">
                         <li>
-                          <a href="https://facebook.com/">
+                          <Link href="https://facebook.com/">
                             <i className="fab fa-facebook-f"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="https://twitter.com/">
+                          <Link href="https://twitter.com/">
                             <i className="fab fa-twitter"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="https://www.instagram.com/">
+                          <Link href="https://www.instagram.com/">
                             <i className="fab fa-instagram"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="https://www.linkedin.com/">
+                          <Link href="https://www.linkedin.com/">
                             <i className="fab fa-linkedin-in"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="https://www.instagram.com/">
+                          <Link href="https://www.instagram.com/">
                             <i className="fab fa-instagram"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="https://www.youtube.com/">
+                          <Link href="https://www.youtube.com/">
                             <i className="fab fa-youtube"></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -1035,18 +1038,18 @@ function blogContextApi() {
                     <div className="post-list-wrap">
                       <div className="single-post">
                         <div className="post-thumbnail">
-                          <a href="single-blog.html">
+                          <Link href="/single-blog">
                             <img
                               src="/assets/media/blog/blog-5.png/"
                               alt="Blog"
                             />
-                          </a>
+                          </Link>
                         </div>
                         <div className="post-content">
                           <h6 className="title">
-                            <a href="single-blog.html">
+                            <Link href="/single-blog">
                               Take ownership and question the status quo in.
-                            </a>
+                            </Link>
                           </h6>
                           <ul className="blog-meta list-unstyled">
                             <li>Sep 10, 2021</li>
@@ -1056,18 +1059,18 @@ function blogContextApi() {
                       </div>
                       <div className="single-post">
                         <div className="post-thumbnail">
-                          <a href="single-blog.html">
+                          <Link href="/single-blog">
                             <img
                               src="/assets/media/blog/blog-6.png/"
                               alt="Blog"
                             />
-                          </a>
+                          </Link>
                         </div>
                         <div className="post-content">
                           <h6 className="title">
-                            <a href="single-blog.html">
+                            <Link href="/single-blog">
                               Take ownership and question the status quo in.
-                            </a>
+                            </Link>
                           </h6>
                           <ul className="blog-meta list-unstyled">
                             <li>Sep 15, 2021</li>
@@ -1077,18 +1080,18 @@ function blogContextApi() {
                       </div>
                       <div className="single-post">
                         <div className="post-thumbnail">
-                          <a href="single-blog.html">
+                          <Link href="/single-blog">
                             <img
                               src="/assets/media/blog/blog-7.png/"
                               alt="Blog"
                             />
-                          </a>
+                          </Link>
                         </div>
                         <div className="post-content">
                           <h6 className="title">
-                            <a href="single-blog.html">
+                            <Link href="/single-blog">
                               Take ownership and question the status quo in.
-                            </a>
+                            </Link>
                           </h6>
                           <ul className="blog-meta list-unstyled">
                             <li>Sep 5, 2021</li>
@@ -1099,12 +1102,12 @@ function blogContextApi() {
                     </div>
                   </div>
                   <div className="widget widget-banner-ad">
-                    <a href="#">
+                    <Link href="/#">
                       <img
                         src="/assets/media/banner/widget-banner.png"
                         alt="banner"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1135,78 +1138,78 @@ function blogContextApi() {
               <div className="slick-slide">
                 <div className="blog-list">
                   <div className="post-thumbnail">
-                    <a href="single-blog.html">
+                    <Link href="single-blog.html">
                       <img
                         src="/assets/media/blog/blog-1.png"
                         alt="Blog Post"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="post-content">
                     <h5 className="title">
-                      <a href="single-blog-2.html">
+                      <Link href="/single-blog-2">
                         How To Use a Remarketing Strategy To Get More
-                      </a>
+                      </Link>
                     </h5>
                     <p>
                       Demand generation is a constant struggle for any business.
                       Each marketing strategy you employ has...
                     </p>
-                    <a href="single-blog-2.html" className="more-btn">
+                    <Link href="/single-blog-2" className="more-btn">
                       Learn more<i className="far fa-angle-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="slick-slide">
                 <div className="blog-list">
                   <div className="post-thumbnail">
-                    <a href="single-blog.html">
+                    <Link href="/single-blog">
                       <img
                         src="/assets/media/blog/blog-2.png"
                         alt="Blog Post"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="post-content">
                     <h5 className="title">
-                      <a href="single-blog-3.html">
+                      <Link href="/single-blog-3">
                         SEO Statistics You Should Know in 2021
-                      </a>
+                      </Link>
                     </h5>
                     <p>
                       Organic search has the potential to capture more than 40
                       percent of your gross revenue...
                     </p>
-                    <a href="single-blog-3.html" className="more-btn">
+                    <Link href="/single-blog-3" className="more-btn">
                       Learn more<i className="far fa-angle-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="slick-slide">
                 <div className="blog-list">
                   <div className="post-thumbnail">
-                    <a href="single-blog.html">
+                    <Link href="/single-blog">
                       <img
                         src="/assets/media/blog/blog-1.png"
                         alt="Blog Post"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="post-content">
                     <h5 className="title">
-                      <a href="single-blog-2.html">
+                      <Link href="/single-blog-2">
                         How To Use a Remarketing Strategy To Get More
-                      </a>
+                      </Link>
                     </h5>
                     <p>
                       Demand generation is a constant struggle for any business.
                       Each marketing strategy you employ has...
                     </p>
-                    <a href="single-blog-2.html" className="more-btn">
+                    <Link href="/single-blog-2" className="more-btn">
                       Learn more<i className="far fa-angle-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1256,19 +1259,19 @@ function blogContextApi() {
               <div className="col-lg-5 col-xl-6">
                 <ul className="main-navigation list-unstyled">
                   <li>
-                    <a href="index-1.html">Digital Agency</a>
+                    <Link href="/index-1">Digital Agency</Link>
                   </li>
                   <li>
-                    <a href="index-2.html">Creative Agency</a>
+                    <Link href="/index-2">Creative Agency</Link>
                   </li>
                   <li>
-                    <a href="index-3.html">Personal Portfolio</a>
+                    <Link href="/index-3">Personal Portfolio</Link>
                   </li>
                   <li>
-                    <a href="index-4.html">Home Startup</a>
+                    <Link href="/index-4">Home Startup</Link>
                   </li>
                   <li>
-                    <a href="index-5.html">Corporate Agency</a>
+                    <Link href="/index-5">Corporate Agency</Link>
                   </li>
                 </ul>
               </div>
@@ -1285,12 +1288,12 @@ function blogContextApi() {
                       <span className="title">
                         We're Available 24/7. Call Now.
                       </span>
-                      <a className="tel" href="tel:8884562790">
+                      <Link className="tel" href="tel:8884562790">
                         <i className="fas fa-phone"></i>(888) 456-2790
-                      </a>
-                      <a className="tel" href="tel:12125553333">
+                      </Link>
+                      <Link className="tel" href="tel:12125553333">
                         <i className="fas fa-fax"></i>(121) 255-53333
-                      </a>
+                      </Link>
                     </address>
                   </div>
                   <div className="contact-inner">
@@ -1298,24 +1301,24 @@ function blogContextApi() {
                     <div className="contact-social-share">
                       <ul className="social-share list-unstyled">
                         <li>
-                          <a href="https://facebook.com/">
+                          <Link href="https://facebook.com/">
                             <i className="fab fa-facebook-f"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="https://twitter.com/">
+                          <Link href="https://twitter.com/">
                             <i className="fab fa-twitter"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="https://www.behance.net/">
+                          <Link href="https://www.behance.net/">
                             <i className="fab fa-behance"></i>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="https://www.linkedin.com/">
+                          <Link href="https://www.linkedin.com/">
                             <i className="fab fa-linkedin-in"></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
