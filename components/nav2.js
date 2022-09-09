@@ -1,162 +1,69 @@
-// const nav2Template = document.createElement("template");
-
-// class nav2 extends HTMLElement {
-//   constructor() {
-//     super();
-//   }
-//   connectedCallback() {
-//     this.innerHTML = `
-//     <header class="header axil-header header-style-1">
-//     <div id="axil-sticky-placeholder"></div>
-//     <div class="axil-mainmenu">
-//         <div class="container">
-//             <div class="header-navbar">
-//                 <div class="header-logo">
-//                     <a href="index.html"><img class="light-version-logo rapca-logo" src="assets/media/logo.svg" alt="logo"></a>
-//                     <a href="index.html"><img class="dark-version-logo rapca-logo" src="assets/media/logo-3.svg" alt="logo"></a>
-//                     <a href="index.html"><img class="sticky-logo rapca-logo" src="assets/media/logo-2.svg" alt="logo"></a>
-//                 </div>
-//                 <div class="header-main-nav">
-//                     <!-- Start Mainmanu Nav -->
-//                     <nav class="mainmenu-nav" id="mobilemenu-popup">
-//                         <div class="d-block d-lg-none">
-//                             <div class="mobile-nav-header">
-//                                 <div class="mobile-nav-logo">
-//                                     <a href="index.html">
-//                                         <img class="light-mode" src="assets/media/logo-2.svg" alt="Site Logo">
-//                                         <img class="dark-mode" src="assets/media/logo-3.svg" alt="Site Logo">
-//                                     </a>
-//                                 </div>
-//                                 <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
-//                             </div>
-//                         </div>
-//                         <ul class="mainmenu">
-//                             <li class="menu-item-has-children">
-//                                 <a href="javascript:void(0);">Services</a>
-//                                 <ul class="axil-submenu">
-//                                   <li><a href="service-reactjs.html">React Development</a></li>
-//                                   <li><a href="service-nextjs.html">Next.js Development</a></li>
-//                                   <li><a href="service-frontend.html">Frontend Development</a></li>
-//                                 </ul>
-//                             </li>
-//                             <li>
-//                                 <a href="portfolio.html">Portfolio</a>
-//                             </li>
-//                             <li>
-//                                 <a href="contact.html">Contact</a>
-//                             </li>
-//                         </ul>
-//                     </nav>
-//                     <!-- End Mainmanu Nav -->
-//                 </div>
-//                 <div class="header-action">
-//                     <ul class="list-unstyled">
-//                         <li class="sidemenu-btn d-lg-block d-none">
-//                             <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuRight">
-//                                 <span></span>
-//                                 <span></span>
-//                                 <span></span>
-//                             </button>
-//                         </li>
-//                         <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
-//                             <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup">
-//                                 <span></span>
-//                                 <span></span>
-//                                 <span></span>
-//                             </button>
-//                         </li>
-//                         <li class="my_switcher d-block d-lg-none">
-//                             <ul>
-//                                 <li title="Light Mode">
-//                                     <a href="javascript:void(0)" class="setColor light" data-theme="light">
-//                                         <i class="fal fa-lightbulb-on"></i>
-//                                     </a>
-//                                 </li>
-//                                 <li title="Dark Mode">
-//                                     <a href="javascript:void(0)" class="setColor dark" data-theme="dark">
-//                                         <i class="fas fa-moon"></i>
-//                                     </a>
-//                                 </li>
-//                             </ul>
-//                         </li>
-//                     </ul>
-//                 </div>
-//             </div>
-//         </div>
-//     </div>
-// </header>
-//       `;
-//   }
-// }
-
-// customElements.define("nav2-component", nav2);
-
 import Link from 'next/link';
 import React from 'react';
 
 export default function nav2() {
   return (
-    <header class="header axil-header header-style-1">
+    <header className="header axil-header header-style-1">
       <div id="axil-sticky-placeholder"></div>
-      <div class="axil-mainmenu">
-        <div class="container">
-          <div class="header-navbar">
-            <div class="header-logo">
+      <div className="axil-mainmenu">
+        <div className="container">
+          <div className="header-navbar">
+            <div className="header-logo">
               <Link href="/">
                 <img
-                  class="light-version-logo rapca-logo"
+                  className="light-version-logo rapca-logo"
                   src="assets/media/logo.svg"
                   alt="logo"
                 />
               </Link>
               <Link href="/">
                 <img
-                  class="dark-version-logo rapca-logo"
+                  className="dark-version-logo rapca-logo"
                   src="assets/media/logo-3.svg"
                   alt="logo"
                 />
               </Link>
               <Link href="/">
                 <img
-                  class="sticky-logo rapca-logo"
+                  className="sticky-logo rapca-logo"
                   src="assets/media/logo-2.svg"
                   alt="logo"
                 />
               </Link>
             </div>
-            <div class="header-main-nav">
+            <div className="header-main-nav">
               {/* <!-- Start Mainmanu Nav --> */}
-              <nav class="mainmenu-nav" id="mobilemenu-popup">
-                <div class="d-block d-lg-none">
-                  <div class="mobile-nav-header">
-                    <div class="mobile-nav-logo">
+              <nav className="mainmenu-nav" id="mobilemenu-popup">
+                <div className="d-block d-lg-none">
+                  <div className="mobile-nav-header">
+                    <div className="mobile-nav-logo">
                       <Link href="/">
                         <img
-                          class="light-mode"
+                          className="light-mode"
                           src="assets/media/logo-2.svg"
                           alt="Site Logo"
                         />
                       </Link>
                       <Link href="/">
                         <img
-                          class="dark-mode"
+                          className="dark-mode"
                           src="assets/media/logo-3.svg"
                           alt="Site Logo"
                         />
                       </Link>
                     </div>
                     <button
-                      class="mobile-menu-close"
+                      className="mobile-menu-close"
                       data-bs-dismiss="offcanvas"
                     >
-                      <i class="fas fa-times"></i>
+                      <i className="fas fa-times"></i>
                     </button>
                   </div>
                 </div>
-                <ul class="mainmenu">
-                  <li class="menu-item-has-children">
+                <ul className="mainmenu">
+                  <li className="menu-item-has-children">
                     <Link href="javascript:void(0);">Services</Link>
-                    <ul class="axil-submenu">
+                    <ul className="axil-submenu">
                       <li>
                         <Link href="/service-reactjs">React Development</Link>
                       </li>
@@ -180,11 +87,11 @@ export default function nav2() {
               </nav>
               {/* <!-- End Mainmanu Nav --> */}
             </div>
-            <div class="header-action">
-              <ul class="list-unstyled">
-                <li class="sidemenu-btn d-lg-block d-none">
+            <div className="header-action">
+              <ul className="list-unstyled">
+                <li className="sidemenu-btn d-lg-block d-none">
                   <button
-                    class="btn-wrap"
+                    className="btn-wrap"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasMenuRight"
                   >
@@ -193,9 +100,9 @@ export default function nav2() {
                     <span></span>
                   </button>
                 </li>
-                <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
+                <li className="mobile-menu-btn sidemenu-btn d-lg-none d-block">
                   <button
-                    class="btn-wrap"
+                    className="btn-wrap"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#mobilemenu-popup"
                   >
@@ -204,24 +111,24 @@ export default function nav2() {
                     <span></span>
                   </button>
                 </li>
-                <li class="my_switcher d-block d-lg-none">
+                <li className="my_switcher d-block d-lg-none">
                   <ul>
                     <li title="Light Mode">
                       <Link
                         href="javascript:void(0)"
-                        class="setColor light"
+                        className="setColor light"
                         data-theme="light"
                       >
-                        <i class="fal fa-lightbulb-on"></i>
+                        <i className="fal fa-lightbulb-on"></i>
                       </Link>
                     </li>
                     <li title="Dark Mode">
                       <Link
                         href="javascript:void(0)"
-                        class="setColor dark"
+                        className="setColor dark"
                         data-theme="dark"
                       >
-                        <i class="fas fa-moon"></i>
+                        <i className="fas fa-moon"></i>
                       </Link>
                     </li>
                   </ul>

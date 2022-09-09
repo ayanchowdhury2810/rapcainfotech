@@ -1,113 +1,38 @@
-// const offCanvasMenuTemplate = document.createElement("template");
-
-// class offCanvasMenu extends HTMLElement {
-//   constructor() {
-//     super();
-//   }
-//   connectedCallback() {
-//     this.innerHTML = `
-//     <div class="offcanvas offcanvas-end header-offcanvasmenu" tabindex="-1" id="offcanvasMenuRight">
-//             <div class="offcanvas-header">
-//                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-//             </div>
-//             <div class="offcanvas-body">
-//                 <form action="#" class="side-nav-search-form">
-//                     <div class="form-group">
-//                         <input type="text" class="search-field" name="search-field" placeholder="Search..." />
-//                         <button class="side-nav-search-btn"><i class="fas fa-search"></i></button>
-//                     </div>
-//                 </form>
-//                 <div class="row">
-//                     <div class="col-lg-5 col-xl-6">
-//                         <ul class="main-navigation list-unstyled">
-//                             <li><a href="index-1.html">Digital Agency</a></li>
-//                             <li><a href="index-2.html">Creative Agency</a></li>
-//                             <li><a href="index-3.html">Personal Portfolio</a></li>
-//                             <li><a href="index-4.html">Home Startup</a></li>
-//                             <li><a href="index-5.html">Corporate Agency</a></li>
-//                         </ul>
-//                     </div>
-//                     <div class="col-lg-7 col-xl-6">
-//                         <div class="contact-info-wrap">
-//                             <div class="contact-inner">
-//                                 <address class="address">
-//                                     <span class="title">Contact Information</span>
-//                                     <p>
-//                                         Theodore Lowe, Ap #867-859 <br />
-//                                         Sit Rd, Azusa New York
-//                                     </p>
-//                                 </address>
-//                                 <address class="address">
-//                                     <span class="title">We're Available 24/7. Call Now.</span>
-//                                     <a class="tel" href="tel:8884562790"><i class="fas fa-phone"></i>(888) 456-2790</a>
-//                                     <a class="tel" href="tel:12125553333"><i class="fas fa-fax"></i>(121) 255-53333</a>
-//                                 </address>
-//                             </div>
-//                             <div class="contact-inner">
-//                                 <h5 class="title">Find us here</h5>
-//                                 <div class="contact-social-share">
-//                                     <ul class="social-share list-unstyled">
-//                                         <li>
-//                                             <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-//                                         </li>
-//                                         <li>
-//                                             <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-//                                         </li>
-//                                         <li>
-//                                             <a href="https://www.behance.net/"><i class="fab fa-behance"></i></a>
-//                                         </li>
-//                                         <li>
-//                                             <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-//                                         </li>
-//                                     </ul>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     `;
-//   }
-// }
-
-// customElements.define("offcanvasmenu-component", offCanvasMenu);
-
 import Link from 'next/link';
 import React from 'react';
 
 export default function offCanvasMenu() {
   return (
     <div
-      class="offcanvas offcanvas-end header-offcanvasmenu"
+      className="offcanvas offcanvas-end header-offcanvasmenu"
       tabindex="-1"
       id="offcanvasMenuRight"
     >
-      <div class="offcanvas-header">
+      <div className="offcanvas-header">
         <button
           type="button"
-          class="btn-close"
+          className="btn-close"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body">
-        <form action="#" class="side-nav-search-form">
-          <div class="form-group">
+      <div className="offcanvas-body">
+        <form action="#" className="side-nav-search-form">
+          <div className="form-group">
             <input
               type="text"
-              class="search-field"
+              className="search-field"
               name="search-field"
               placeholder="Search..."
             />
-            <button class="side-nav-search-btn">
-              <i class="fas fa-search"></i>
+            <button className="side-nav-search-btn">
+              <i className="fas fa-search"></i>
             </button>
           </div>
         </form>
-        <div class="row">
-          <div class="col-lg-5 col-xl-6">
-            <ul class="main-navigation list-unstyled">
+        <div className="row">
+          <div className="col-lg-5 col-xl-6">
+            <ul className="main-navigation list-unstyled">
               <li>
                 <Link href="/index-1">Digital Agency</Link>
               </li>
@@ -125,48 +50,48 @@ export default function offCanvasMenu() {
               </li>
             </ul>
           </div>
-          <div class="col-lg-7 col-xl-6">
-            <div class="contact-info-wrap">
-              <div class="contact-inner">
-                <address class="address">
-                  <span class="title">Contact Information</span>
+          <div className="col-lg-7 col-xl-6">
+            <div className="contact-info-wrap">
+              <div className="contact-inner">
+                <address className="address">
+                  <span className="title">Contact Information</span>
                   <p>
                     Theodore Lowe, Ap #867-859 <br />
                     Sit Rd, Azusa New York
                   </p>
                 </address>
-                <address class="address">
-                  <span class="title">We're Available 24/7. Call Now.</span>
-                  <Link class="tel" href="tel:8884562790">
-                    <i class="fas fa-phone"></i>(888) 456-2790
+                <address className="address">
+                  <span className="title">We're Available 24/7. Call Now.</span>
+                  <Link className="tel" href="tel:8884562790">
+                    <i className="fas fa-phone"></i>(888) 456-2790
                   </Link>
-                  <Link class="tel" href="tel:12125553333">
-                    <i class="fas fa-fax"></i>(121) 255-53333
+                  <Link className="tel" href="tel:12125553333">
+                    <i className="fas fa-fax"></i>(121) 255-53333
                   </Link>
                 </address>
               </div>
-              <div class="contact-inner">
-                <h5 class="title">Find us here</h5>
-                <div class="contact-social-share">
-                  <ul class="social-share list-unstyled">
+              <div className="contact-inner">
+                <h5 className="title">Find us here</h5>
+                <div className="contact-social-share">
+                  <ul className="social-share list-unstyled">
                     <li>
                       <Link href="https://facebook.com/">
-                        <i class="fab fa-facebook-f"></i>
+                        <i className="fab fa-facebook-f"></i>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://twitter.com/">
-                        <i class="fab fa-twitter"></i>
+                        <i className="fab fa-twitter"></i>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.behance.net/">
-                        <i class="fab fa-behance"></i>
+                        <i className="fab fa-behance"></i>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.linkedin.com/">
-                        <i class="fab fa-linkedin-in"></i>
+                        <i className="fab fa-linkedin-in"></i>
                       </Link>
                     </li>
                   </ul>
