@@ -23,22 +23,6 @@ function portfolio() {
         />
       </Head>
 
-      <Script src="assets/js/vendor/jquery-3.6.0.min.js" />
-      <Script src="assets/js/vendor/bootstrap.min.js" />
-      <Script src="assets/js/vendor/isotope.pkgd.min.js" />
-      <Script src="assets/js/vendor/imagesloaded.pkgd.min.js" />
-      <Script src="assets/js/vendor/waypoints.min.js" />
-      <Script src="assets/js/vendor/counterup.js" />
-      <Script src="assets/js/vendor/slick.min.js" />
-      <Script src="assets/js/vendor/sal.js" />
-      <Script src="assets/js/vendor/jquery.magnific-popup.min.js" />
-      <Script src="assets/js/vendor/js.cookie.js" />
-      <Script src="assets/js/vendor/jquery.style.switcher.js" />
-      <Script src="assets/js/vendor/jquery.countdown.min.js" />
-      <Script src="assets/js/vendor/tilt.js" />
-      <Script src="assets/js/vendor/green-audio-player.min.js" />
-      <Script src="assets/js/vendor/jquery.nav.js" />
-      <Script src="public/assets/js/app.js" />
       <div className="sticky-header">
         {/* <!--[if lte IE 9]>
       <p className="browserupgrade">
